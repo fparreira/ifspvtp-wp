@@ -15,36 +15,47 @@ html{
 }
 
 
+
 /* header ****************************/
-header nav#navBrasil{
+header #navBrasil{
     background: #f1f1f1;
     font-weight: bold;
     font-size: 0.9em;
+    height: 34px;
 }
 
-header #navBrasil .navbar-brand{
-    font-size: 1em;
-    font-weight: bold;
-}
-
-header #navBrasil .navbar-brand img{
+#navBrasil img{
     float: left;
     margin-right: 10px;
 }
 
-header #menuBrasil{
-    float: right;
+#navBrasil a:link,
+#navBrasil a:active,
+#navBrasil a:visited,
+#navBrasil a:focus{
+    color: #606060;
+    text-decoration: none;
 }
 
-.navbar-fixed-top {
-    height: 70px; /* Whatever you want. */
+#navBrasil .brandNavBrasil{
+    background: #28a4c9;
+
+
+}
+
+#navBrasil .itensNavBrasil{
+    background: #fe4522;
+
+    text-align: right;
+
+
 }
 
 
 
 /* links ****************************/
 
-.tituloLinkAreas{
+.tituloLinkAreas {
     border-radius:8px;
     background-color:#708c3a;
     padding:6px;

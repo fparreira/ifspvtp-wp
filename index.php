@@ -13,33 +13,33 @@
 
     <!-- header ----------------------------------------->
     <header style="border: 1px solid red">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <a class="navbar-brand" href="#">
-                        <img src="<?php bloginfo("template_url"); ?>/assets/images/brasil-band.png" class="img-responsive">BRASIL
-                    </a>
-                    <ul>
-                        <li>
-                            <a href="#">Acesso à informação</a>
-                        </li>
-                        <li>
-                            <a href="#">Participe</a>
-                        </li>
-                        <li>
-                            <a href="#">Serviços</a>
-                        </li>
-                        <li>
-                            <a href="#">Legislação</a>
-                        </li>
-                        <li>
-                            <a href="#">Canais</a>
-                        </li>
-                    </ul>
+        <div id="navBrasil">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 brandNavBrasil">
+                        <a href="#"><img src="<?php bloginfo("template_url"); ?>/assets/images/brasil-band.png" class="img-responsive">BRASIL</a>
+                        <a href="#">Acesso à informação</a>
+                    </div>
+                    <div class="col-lg-9 itensNavBrasil">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#">Participe</a>
+                            </li>
+                            <li>
+                                <a href="#">Serviços</a>
+                            </li>
+                            <li>
+                                <a href="#">Legislação</a>
+                            </li>
+                            <li>
+                                <a href="#">Canais</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="identificacao" class="container" style="background: #fe5567">
+        <div id="identificacao" class="container" style="background: #fe5599">
             <div class="row">
                 <div class="col-lg-7" style="background: #fe4522">
                     <img src="<?php bloginfo("template_url"); ?>/assets/images/logo-ifsp-vtp.png" class="img-responsive" alt="IFSP - Campus Votuporanga">
@@ -57,7 +57,7 @@
                 </div>
             </div>
         </div>
-        <nav id="navPrincipal" style="background: #4577ef">
+        <nav id="navPrincipal" style="background: #4500ef">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuPrincipal">
@@ -96,7 +96,7 @@
     </header>
 
     <!-- body ----------------------------------------->
-    <section id="body" style="background: #c3c456">
+    <section id="body" style="background: #c99456">
         <div class="container" style="border: 1px solid blue">
             <div class="row">
 
