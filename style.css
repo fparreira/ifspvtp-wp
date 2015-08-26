@@ -1,0 +1,109 @@
+/*
+Theme Name: IFSP VTP
+Theme URI: https://vtp.ifsp.edu.br
+Author: Fernando Parreira
+Author URI: https://twitter.com/fjparreira
+Description: Novo Tema IFSP VTP
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: ifsp, votuporanga
+*/
+
+html{
+    font-size: 10px;
+}
+
+
+/* header ****************************/
+header nav#navBrasil{
+    background: #f1f1f1;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+header #navBrasil .navbar-brand{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+header #navBrasil .navbar-brand img{
+    float: left;
+    margin-right: 10px;
+}
+
+header #menuBrasil{
+    float: right;
+}
+
+.navbar-fixed-top {
+    height: 70px; /* Whatever you want. */
+}
+
+
+
+/* links ****************************/
+
+.tituloLinkAreas{
+    border-radius:8px;
+    background-color:#708c3a;
+    padding:6px;
+    color: #fff;
+    width: 100%;
+    margin: 10px 0px 3px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+a.linkAreas{
+    border-radius:8px;
+    background-color:#ecf5e0;
+    padding:0px;
+    color: #708c3a;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 3px;
+}
+
+.linkAreas i{
+    padding:10px;
+    margin-right: 5px;
+    background-color:#708c3a;
+    color: #fff;
+    border-radius:8px 0px 0px 8px;
+}
+
+.linkAreas span{
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-weight: bold;
+}
+
+a.linkAreas:hover,
+a.linkAreas:active,
+a.linkAreas:focus{
+    color: #000000;
+}
+
+
+/* conteudo ****************************/
+
+#conteudo #destaque{
+    margin-bottom: 1em;
+}
+
+#conteudo #noticias .row{
+    background: #885511;
+    margin-bottom: 1em;
+}
+
+#conteudo #maisNoticias{
+    background: #425900;
+    padding: 0px;
+}
+
+#conteudo #maisNoticias h4{
+
+}
+
+
+
