@@ -12,13 +12,19 @@
 <body>
 
     <!-- header ----------------------------------------->
-    <header style="border: 1px solid red">
+    <header>
         <div id="navBrasil">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 brandNavBrasil">
-                        <a href="#"><img src="<?php bloginfo("template_url"); ?>/assets/images/brasil-band.png" class="img-responsive">BRASIL</a>
-                        <a href="#">Acesso à informação</a>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#"><img src="<?php bloginfo("template_url"); ?>/assets/images/brasil-band.png" class="img-responsive imagemLeft">BRASIL</a>
+                            </li>
+                            <li>
+                                <a href="#">Acesso à informação</a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="col-lg-9 itensNavBrasil">
                         <ul class="list-inline">
@@ -39,25 +45,24 @@
                 </div>
             </div>
         </div>
-        <div id="identificacao" class="container" style="background: #fe5599">
-            <div class="row">
-                <div class="col-lg-7" style="background: #fe4522">
-                    <img src="<?php bloginfo("template_url"); ?>/assets/images/logo-ifsp-vtp.png" class="img-responsive" alt="IFSP - Campus Votuporanga">
-                </div>
-                <div class="col-lg-5" style="background: #114596">
-                    <img src="<?php bloginfo("template_url"); ?>/assets/images/facebook.png" class="img-responsive" alt="Facebook">
-                    <img src="<?php bloginfo("template_url"); ?>/assets/images/youtube.png" class="img-responsive" alt="youtube">
-                    <form>
-                        <div class="form-group col-xs-4">
+        <div id="identificacao">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img src="<?php bloginfo("template_url"); ?>/assets/images/logo-ifsp-vtp.png" class="img-responsive imagemLeft" alt="IFSP - Campus Votuporanga">
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="<?php bloginfo("template_url"); ?>/assets/images/facebook.png" class="img-responsive imagemLeft" alt="Facebook">
+                        <img src="<?php bloginfo("template_url"); ?>/assets/images/youtube.png" class="img-responsive imagemLeft" alt="youtube">
+                        <form class="form-inline">
                             <input type="search" class="form-control input-sm" id="buscar" placeholder="Buscar...">
                             <button type="submit" class="fa fa-search btn btn-xs"></button>
-                        </div>
-
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <nav id="navPrincipal" style="background: #4500ef">
+        <nav id="navPrincipal">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuPrincipal">

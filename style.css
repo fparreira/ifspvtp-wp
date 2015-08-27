@@ -14,6 +14,10 @@ html{
     font-size: 10px;
 }
 
+.imagemLeft{
+    float: left;
+    margin-right: 4px;
+}
 
 
 /* header ****************************/
@@ -21,11 +25,10 @@ header #navBrasil{
     background: #f1f1f1;
     font-weight: bold;
     font-size: 0.9em;
-    height: 34px;
+    border-bottom: 1px solid #dfdfdf;
 }
 
 #navBrasil img{
-    float: left;
     margin-right: 10px;
 }
 
@@ -37,19 +40,41 @@ header #navBrasil{
     text-decoration: none;
 }
 
-#navBrasil .brandNavBrasil{
-    background: #28a4c9;
+#navBrasil li{
+    padding: 0px 5px 0px 5px;
+    border-left: 2px solid #dfdfdf;
+    margin-top: 6px;
+}
 
+#navBrasil .brandNavBrasil{
 
 }
 
 #navBrasil .itensNavBrasil{
-    background: #fe4522;
-
     text-align: right;
 
-
 }
+
+header #identificacao{
+    background: #ecf5e0;
+    padding: 2em 0px 2em 0px;
+}
+
+header #navPrincipal{
+    background: url("assets/images/bg1.jpg") #f1f1f1;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 2px solid #cccccc;
+}
+
+header #navPrincipal .navbar-nav{
+    height: 40px;
+}
+
+header #navPrincipal .navbar-nav > li > a{
+    padding-top:10px !important;
+    padding-bottom:10px !important;
+}
+
 
 
 
