@@ -123,6 +123,16 @@ a.linkAreas:focus{
 
 /* conteudo ****************************/
 
+#body{
+    background: #ffffff;
+}
+
+#body > .container:first-child{
+    background: #eeff00;
+    padding-top: 15px;
+}
+
+
 #conteudo #destaque{
     margin-bottom: 1em;
 }

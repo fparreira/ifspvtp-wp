@@ -101,7 +101,7 @@
     </header>
 
     <!-- body ----------------------------------------->
-    <section id="body" style="background: #c99456">
+    <section id="body">
         <div class="container" style="border: 1px solid blue">
             <div class="row">
 
