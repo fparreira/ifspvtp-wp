@@ -102,13 +102,13 @@
 
     <!-- body ----------------------------------------->
     <section id="body">
-        <div class="container" style="border: 1px solid blue">
+        <div class="container">
             <div class="row">
 
                 <!-- links ---------------------------->
-                <section id="links" class="col-lg-2" style="background: #875421">
+                <section id="links" class="col-lg-2">
 
-                    <img src="<?php bloginfo("template_url"); ?>/assets/images/105anos.png" class="img-responsive">
+                    <img src="<?php bloginfo("template_url"); ?>/assets/images/105anos.png" class="img-responsive center-block">
 
                     <a href="#" class="btn linkAreas">
                         <i class="fa fa-cog"></i><span>CERTIFICAÇÃO</span>
@@ -159,9 +159,9 @@
                 </section>
 
                 <!-- conteudo ---------------------------->
-                <section id="conteudo" class="col-lg-7" style="background: #986512">
+                <section id="conteudo" class="col-lg-7">
 
-                    <div id="destaque" class="container-fluid" style="background: #ffe543">
+                    <div id="destaque" class="container-fluid">
                         <div class="row">
                             <div class="col-lg-12" >
                                 <img src="<?php bloginfo("template_url"); ?>/assets/images/Homenagem-do-IFSP-a-todos-os-estudantes.png" class="img-responsive">
@@ -170,7 +170,7 @@
                         </div>
                     </div>
 
-                    <div id="noticias" class="container-fluid" style="background: #e34452">
+                    <div id="noticias" class="container-fluid">
                         <div class="row">
                             <div class="col-lg-12" >
                                 <h2>Processo Seletivo para Vagas Remanescente de Cursos Técnicos</h2>
@@ -213,7 +213,18 @@
 
     <!-- rodape --------------------------------------------------------->
     <footer style="border: 1px solid red">
-        rodape
+        <div class="container-fluid">
+            <div class="row">
+                <div id="linksRodape" class="col-lg-12">
+                    teste
+                </div>
+            </div>
+            <div id="localRodape" class="row">
+                <div class="col-lg-12">
+
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- scripts -->
