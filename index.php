@@ -164,6 +164,11 @@
                     <div id="destaque" class="container-fluid">
                         <div class="row">
                             <div class="col-lg-12" >
+
+                                <?php
+                                    echo "comando teste";
+                                ?>
+
                                 <img src="<?php bloginfo("template_url"); ?>/assets/images/Homenagem-do-IFSP-a-todos-os-estudantes.png" class="img-responsive">
                                 <h1>Homenagem do IFSP a todos os estudantes</h1>
                             </div>
