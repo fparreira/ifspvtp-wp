@@ -1,104 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>IFSP - Campus Votuporanga</title>
-
-    <link href="<?php bloginfo("template_url"); ?>/style.css" rel="stylesheet">
-    <link href="<?php bloginfo("template_url"); ?>/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="<?php bloginfo("template_url"); ?>/assets/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="<?php bloginfo("template_url"); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-
-    <!-- header ----------------------------------------->
-    <header>
-        <div id="navBrasil">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 brandNavBrasil">
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#"><img src="<?php bloginfo("template_url"); ?>/assets/images/brasil-band.png" class="img-responsive imagemLeft">BRASIL</a>
-                            </li>
-                            <li>
-                                <a href="#">Acesso à informação</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-9 itensNavBrasil">
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#">Participe</a>
-                            </li>
-                            <li>
-                                <a href="#">Serviços</a>
-                            </li>
-                            <li>
-                                <a href="#">Legislação</a>
-                            </li>
-                            <li>
-                                <a href="#">Canais</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="identificacao">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <img src="<?php bloginfo("template_url"); ?>/assets/images/logo-ifsp-vtp.png" class="img-responsive imagemLeft" alt="IFSP - Campus Votuporanga">
-                    </div>
-                    <div class="col-lg-5">
-                        <img src="<?php bloginfo("template_url"); ?>/assets/images/facebook.png" class="img-responsive imagemLeft" alt="Facebook">
-                        <img src="<?php bloginfo("template_url"); ?>/assets/images/youtube.png" class="img-responsive imagemLeft" alt="youtube">
-                        <form class="form-inline">
-                            <input type="search" class="form-control input-sm" id="buscar" placeholder="Buscar...">
-                            <button type="submit" class="fa fa-search btn btn-xs"></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <nav id="navPrincipal">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuPrincipal">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="menuPrincipal">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="#">Início</a>
-                        </li>
-                        <li>
-                            <a href="#">Insituição</a>
-                        </li>
-                        <li>
-                            <a href="#">Cursos</a>
-                        </li>
-                        <li>
-                            <a href="#">Processo Seletivo</a>
-                        </li>
-                        <li>
-                            <a href="#">Acadêmico</a>
-                        </li>
-                        <li>
-                            <a href="#">Comunicação</a>
-                        </li>
-                        <li>
-                            <a href="#">contato</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+<?php get_header(); ?>
 
     <!-- body ----------------------------------------->
     <section id="body">
@@ -166,42 +66,66 @@
                             <div class="col-lg-12" >
 
                                 <?php
-                                    echo "comando teste";
+                                $args = array('post_type'=>'post', 'tag'=>'destaque');
+                                $post_destaque = get_posts($args);
                                 ?>
+                                <?php if($post_destaque) : foreach( $post_destaque as $post ) : setup_postdata( $post ); ?>
+                                        <?php if(has_post_thumbnail()): ?>
+                                        <?php the_post_thumbnail('', array('class'=>'img-responsive')); ?>
+                                        <?php endif; ?>
+                                        <h1><?php the_title(); ?></h1>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
 
-                                <img src="<?php bloginfo("template_url"); ?>/assets/images/Homenagem-do-IFSP-a-todos-os-estudantes.png" class="img-responsive">
-                                <h1>Homenagem do IFSP a todos os estudantes</h1>
                             </div>
                         </div>
                     </div>
 
                     <div id="noticias" class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-12" >
-                                <h2>Processo Seletivo para Vagas Remanescente de Cursos Técnicos</h2>
-                                <span>O intituto Federal de Educação, Ciência e Tecnologia de São Paulo, torna publico
-                                o gabarito das provas do Processo seletivo para preenchimento de vagas remasnescentes
-                                dos Cursos Técnicos<i class="btn bg-info">Leia Mais</i></span>
+
+                        <?php
+                        $args = array('post_type'=>'post', 'tag'=>'evidencia');
+                        $post_evidencia = get_posts($args);
+                        ?>
+
+                        <?php if($post_evidencia) : foreach( $post_evidencia as $post ) : setup_postdata( $post ); ?>
+
+                            <div class="row">
+                                <div class="col-lg-12" >
+                                    <h2><?php the_title(); ?></h2>
+                                    <span><?php the_content(); ?></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12" >
-                                <h2>Processo Seletivo: Locais das provas</h2>
-                                <span>O intituto Federal de Educação, Ciência e Tecnologia de São Paulo, torna publico
-                                    a lista com os locais das provas<i class="btn bg-info">Leia Mais</i></span>
-                            </div>
-                        </div>
+
+                        <?php endforeach; ?>
+                        <?php endif; ?>
+
                     </div>
 
 
                     <div id="maisNoticias" class="container-fluid">
                         <h4>Mais notícias</h4>
                         <div class="list-group">
-                            <a href="#" class="list-group-item">Cras justo odio</a>
-                            <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                            <a href="#" class="list-group-item">Morbi leo risus</a>
-                            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                            <a href="#" class="list-group-item">Vestibulum at eros</a>
+
+
+                            <?php
+                            $args = array(
+                                'posts_per_page'=>10,
+                                'tag__not_in'=>array(4,5)
+                            );
+
+                            $post_noticia = new WP_Query($args);
+
+                            //$post_noticia = get_posts($args);
+                            ?>
+
+                            <?php if($post_noticia->have_posts()) : while( $post_noticia->have_posts()) : $post_noticia->the_post(); ?>
+
+                                <a href="#" class="list-group-item"><?php the_title(); ?></a>
+
+                            <?php endwhile; ?>
+                            <?php endif; ?>
+
                         </div>
                     </div>
 
@@ -216,33 +140,4 @@
         </div>
     </section>
 
-    <!-- rodape --------------------------------------------------------->
-    <footer style="border: 1px solid red">
-        <div class="container-fluid">
-            <div class="row">
-                <div id="linksRodape" class="col-lg-12">
-                    teste
-                </div>
-            </div>
-            <div id="localRodape" class="row">
-                <div class="col-lg-12">
-
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- scripts -->
-    <script src="<?php bloginfo("template_url"); ?>/assets/js/jquery-2.1.4.min.js"></script>
-
-    <script src="<?php bloginfo("template_url"); ?>/assets/js/bootstrap.min.js"></script>
-
-
-    <script>
-        $("document").ready(function(){
-            console.log("teste de jquery");
-        });
-    </script>
-
-</body>
-</html>
+<?php get_footer(); ?>

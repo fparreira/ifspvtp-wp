@@ -67,7 +67,7 @@ header #navPrincipal{
 }
 
 header #navPrincipal .navbar-nav{
-    height: 40px;
+
 }
 
 header #navPrincipal .navbar-nav > li > a{
@@ -157,15 +157,15 @@ header #navPrincipal .navbar-nav > li > a{
 
 /* footer ****************************/
 footer{
-    background: #c7254e;
+    margin-top: 40px;
 }
 
 footer #linksRodape{
-    background: #2255aa;
+    background: #68a63e;
     min-height: 50em;
 }
 
 footer #localRodape{
-    background: #aa5599;
+    background: #1e5a2d;
     min-height: 8em;
 }
