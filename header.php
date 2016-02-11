@@ -8,6 +8,8 @@
     <link href="<?php bloginfo("template_url"); ?>/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?php bloginfo("template_url"); ?>/assets/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="<?php bloginfo("template_url"); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Noticia+Text:400,700|Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -81,7 +83,7 @@
                             'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                             'walker'            => new wp_bootstrap_navwalker())
                     );
-                ?>  
+                ?>
             </div>
 
 
