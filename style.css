@@ -124,6 +124,61 @@ header #navPrincipal .navbar-nav > li > a{
 }
 
 
+ul.menu{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  background: #ffee44;
+}
+
+
+ul.menu li.tituloLinkAreas a{
+  border-radius:8px;
+  background-color:#708c3a;
+  padding:6px;
+  color: #fff;
+  width: 100%;
+  margin: 10px 0px 3px 0px;
+  font-weight: bold;
+}
+
+ul.menu li.linkAreas a{
+  border-radius:8px;
+  background-color:#ecf5e0;
+  padding:0px;
+  color: #708c3a;
+  width: 100%;
+  text-align: left;
+  margin: 1px 0px 1px 0px;
+}
+
+
+
+/* Target the menu item LI */
+.menu li.myClass{
+  /* Margin might go here */
+}
+/* Target the menu item Anchor (link) */
+.menu li.myClass > a{
+  /* Colors, font sizes, would normally go here */
+}
+
+/* Target the menu item LI in UberMenu */
+#megaMenu ul.megaMenu li.myClass{
+
+}
+/* Target the menu item Anchor (link) in UberMenu */
+#megaMenu ul.megaMenu li.myClass > a{
+  /* Colors, font sizes, would go here */
+}
+
+
+
+
+
+
+
+
 /* conteudo ****************************/
 #body{
     background: #ffffff;

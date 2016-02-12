@@ -10,10 +10,6 @@
 
                   <?php get_sidebar('left'); ?>
 
-
-
-                    <img src="<?php bloginfo("template_url"); ?>/assets/images/105anos.png" class="img-responsive center-block">
-
                     <a href="#" class="btn linkAreas">
                         <i class="fa fa-cog"></i><span>CERTIFICAÇÃO</span>
                     </a>
