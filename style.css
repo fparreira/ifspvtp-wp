@@ -83,100 +83,57 @@ header #navPrincipal .navbar-nav > li > a{
     padding: 0px;
 }
 
-#links .tituloLinkAreas {
-    border-radius:8px;
-    background-color:#708c3a;
-    padding:6px;
-    color: #fff;
-    width: 100%;
-    margin: 10px 0px 3px 0px;
-    text-align: center;
-    font-weight: bold;
-}
-
-#links a.linkAreas{
-    border-radius:8px;
-    background-color:#ecf5e0;
-    padding:0px;
-    color: #708c3a;
-    width: 100%;
-    text-align: left;
-    margin: 1px 0px 1px 0px;
-}
-
-#links .linkAreas i{
-    padding:10px;
-    margin-right: 5px;
-    background-color:#708c3a;
-    color: #fff;
-    border-radius:8px 0px 0px 8px;
-}
-
-#links .linkAreas span{
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-    font-weight: bold;
-}
-
-#links a.linkAreas:hover,
-#links a.linkAreas:active,
-#links a.linkAreas:focus{
-    color: #000000;
-}
-
-
-ul.menu{
-  list-style-type: none;
-  margin: 0px;
+#links ul.menu{
   padding: 0px;
-  background: #ffee44;
+  margin: 0px;
+  list-style-type: none;
 }
 
-
-ul.menu li.tituloLinkAreas a{
+#links ul.menu li.tituloLinkAreas{
   border-radius:8px;
   background-color:#708c3a;
-  padding:6px;
   color: #fff;
-  width: 100%;
-  margin: 10px 0px 3px 0px;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  text-align: center;
   font-weight: bold;
+  padding:6px;
+
+}
+#links ul.menu li.tituloLinkAreas a{
+  color: #fff;
 }
 
-ul.menu li.linkAreas a{
-  border-radius:8px;
-  background-color:#ecf5e0;
-  padding:0px;
-  color: #708c3a;
+
+#links ul.menu li.linkAreas{
+  border-radius:6px;
+  margin: 1px;
+  background: #ecf5e0;
   width: 100%;
   text-align: left;
-  margin: 1px 0px 1px 0px;
+  color: #708c3a;
 }
 
-
-
-/* Target the menu item LI */
-.menu li.myClass{
-  /* Margin might go here */
-}
-/* Target the menu item Anchor (link) */
-.menu li.myClass > a{
-  /* Colors, font sizes, would normally go here */
-}
-
-/* Target the menu item LI in UberMenu */
-#megaMenu ul.megaMenu li.myClass{
+#links ul.menu li.linkAreas a{
+  color: #708c3a;
+  display: block;
 
 }
-/* Target the menu item Anchor (link) in UberMenu */
-#megaMenu ul.megaMenu li.myClass > a{
-  /* Colors, font sizes, would go here */
+
+#links ul.menu li.linkAreas i{
+  padding:10px;
+  margin-right: 5px;
+  background-color:#708c3a;
+  color: #fff;
+  border-radius:8px 0px 0px 8px;
 }
 
-
-
-
-
-
+#links ul.menu li.linkAreas a:hover,
+#links ul.menu li.linkAreas a:active,
+#links ul.menu li.linkAreas a:focus{
+    color: #000000;
+    text-decoration: none;
+}
 
 
 /* conteudo ****************************/

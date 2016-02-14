@@ -10,6 +10,18 @@
 
                   <?php get_sidebar('left'); ?>
 
+
+
+
+                  <ul class="menu">
+                      <li class="tituloLinkAreas"><a href="#">ALUNOS</a></li>
+                      <li class="btn linkAreas"><a href="#">CERTIFICAÇÃO</a></li>
+                      <li class="btn linkAreas"><a href="#">BIBLIOTECA</a></li>
+                      <li class="btn linkAreas"><a href="#">MANUAL</a></li>
+                  </ul>
+
+
+
                     <a href="#" class="btn linkAreas">
                         <i class="fa fa-cog"></i><span>CERTIFICAÇÃO</span>
                     </a>
