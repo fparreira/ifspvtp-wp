@@ -10,18 +10,6 @@
 
                   <?php get_sidebar('left'); ?>
 
-
-
-
-                  <ul class="menu">
-                      <li class="tituloLinkAreas"><a href="#">ALUNOS</a></li>
-                      <li class="btn linkAreas"><a href="#">CERTIFICAÇÃO</a></li>
-                      <li class="btn linkAreas"><a href="#">BIBLIOTECA</a></li>
-                      <li class="btn linkAreas"><a href="#">MANUAL</a></li>
-                  </ul>
-
-
-
                     <a href="#" class="btn linkAreas">
                         <i class="fa fa-cog"></i><span>CERTIFICAÇÃO</span>
                     </a>
@@ -33,39 +21,6 @@
                     </a>
                     <a href="#" class="btn linkAreas">
                         <i class="fa fa-black-tie"></i><span>CONSELHO</span>
-                    </a>
-
-                    <div class="tituloLinkAreas">
-                        <span>COORDENADORIAS</span>
-                    </div>
-                    <a href="#" class="btn linkAreas">
-                        <i class="fa fa-cog"></i><span>CERTIFICAÇÃO</span>
-                    </a>
-                    <a href="#" class="btn linkAreas">
-                        <i class="fa fa-bank"></i><span>BIBLIOTECA</span>
-                    </a>
-                    <a href="#" class="btn linkAreas">
-                        <i class="fa fa-arrow-down"></i><span>MANUAL</span>
-                    </a>
-                    <a href="#" class="btn linkAreas">
-                        <i class="fa fa-black-tie"></i><span>CONSELHO</span>
-                    </a>
-
-                    <a href="#" class="btn linkAreas">
-                        <i class="fa fa-eye"></i><span>PARREIRA</span>
-                    </a>
-
-                    <a href="#" class="btn linkAreas">
-                        <i class="fa fa-eye"></i><span>PARREIRA</span>
-                    </a>
-                    <a href="#" class="btn linkAreas">
-                        <i class="fa fa-eye"></i><span>PARREIRA</span>
-                    </a>
-                    <a href="#" class="btn linkAreas">
-                        <i class="fa fa-eye"></i><span>PARREIRA</span>
-                    </a>
-                    <a href="#" class="btn linkAreas">
-                        <i class="fa fa-eye"></i><span>PARREIRA</span>
                     </a>
 
                 </section>
@@ -85,7 +40,7 @@
                                         <?php if(has_post_thumbnail()): ?>
                                         <?php the_post_thumbnail('', array('class'=>'img-responsive')); ?>
                                       <?php endif; ?>
-                                        <h1><?php the_title(); ?></h1>
+                                        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                                     <?php endforeach; ?>
                                 <?php endif; ?>
 
@@ -104,7 +59,7 @@
 
                             <div class="row">
                                 <div class="col-lg-12" >
-                                    <h3><?php the_title(); ?></h3>
+                                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                                     <span><?php the_content(); ?></span>
                                 </div>
                             </div>
@@ -132,7 +87,7 @@
 
                             <?php if($post_noticia->have_posts()) : while( $post_noticia->have_posts()) : $post_noticia->the_post(); ?>
 
-                                <a href="#" class="list-group-item"><?php the_title(); ?></a>
+                                <a href="<?php the_permalink(); ?>" class="list-group-item"><?php the_title(); ?></a>
 
                             <?php endwhile; ?>
                             <?php endif; ?>

@@ -76,8 +76,6 @@ header #navPrincipal .navbar-nav > li > a{
 }
 
 
-
-
 /* links ****************************/
 #links{
     padding: 0px;
@@ -165,6 +163,11 @@ header #navPrincipal .navbar-nav > li > a{
   font-size: 3em;
 }
 
+#conteudo #destaque h1 a:link,
+#conteudo #destaque h1 a:visited{
+  color: #336a0e;
+}
+
 #conteudo #noticias .row{
     background: #f2f9e8;
     margin-bottom: 1em;
@@ -173,6 +176,11 @@ header #navPrincipal .navbar-nav > li > a{
 
 #conteudo #noticias h3{
   font-family: 'Noticia Text', serif;
+}
+
+#conteudo #noticias h3 a:link,
+#conteudo #noticias h3 a:visited{
+  color: #000000;
 }
 
 #conteudo #maisNoticias{

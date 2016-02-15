@@ -57,8 +57,7 @@
                     <img src="<?php bloginfo("template_url"); ?>/assets/images/facebook.png" class="img-responsive imagemLeft" alt="Facebook">
                     <img src="<?php bloginfo("template_url"); ?>/assets/images/youtube.png" class="img-responsive imagemLeft" alt="youtube">
                     <form class="form-inline">
-                        <input type="search" class="form-control input-sm" id="buscar" placeholder="Buscar...">
-                        <button type="submit" class="fa fa-search btn btn-xs"></button>
+                        <?php get_search_form(); ?>
                     </form>
                 </div>
             </div>
