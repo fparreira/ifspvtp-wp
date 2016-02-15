@@ -2,38 +2,33 @@
 <!-- rodape --------------------------------------------------------->
 <footer>
     <div class="container-fluid">
-        <div id="linksRodape" class="row">
+        <div id="rodape" class="row">
             <div class="col-lg-12">
                 <div class="container">
-                    <div class="row" id="linksRodapeBanner">
-                        <div class="col-lg-12" style="background: #1259e3">
-                            <h1>IMAGEM</h1>
+                    <div class="row" id="rodapeBanner">
+                        <div class="col-lg-12">
+                            <?php get_sidebar('bottom1'); ?>
                         </div>
                     </div>
-                    <div class="row" id="linksRodapeTexto">
-                        <div class="col-lg-3" style="background: #443355">
-                            <ul>
-                                <li>Admininistracao</li>
-                                <li>Documentos</li>
-                                <li>Financeiro</li>
-                                <li>Licitação</li>
-                                <li>Veículo Oficial</li>
-                            </ul>
+                    <hr>
+                    <div class="row" id="rodapeTexto">
+                        <div class="col-lg-3">
+                            <?php get_sidebar('bottom2'); ?>
                         </div>
-                        <div class="col-lg-3" style="background: #345562">
-                            <h1>linkssss</h1>
+                        <div class="col-lg-3">
+                            <?php get_sidebar('bottom3'); ?>
                         </div>
-                        <div class="col-lg-3" style="background: #af3355">
-                            <h1>linkssss</h1>
+                        <div class="col-lg-3">
+                            <?php get_sidebar('bottom4'); ?>
                         </div>
-                        <div class="col-lg-3" style="background: #de56a2">
-                            <h1>linkssss</h1>
+                        <div class="col-lg-3">
+                            <?php get_sidebar('bottom5'); ?>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="localRodape" class="row">
+        <div id="rodapeLocal" class="row">
             <div class="col-lg-12">
                 <div class="container">
                     <div class="row">
@@ -56,7 +51,7 @@
 
 <script>
     $("document").ready(function(){
-        
+
     });
 </script>
 

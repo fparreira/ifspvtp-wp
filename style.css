@@ -87,7 +87,7 @@ header #navPrincipal .navbar-nav > li > a{
   list-style-type: none;
 }
 
-#links ul.menu li.tituloLinkAreas{
+#links ul.menu li.tituloMenu{
   border-radius:8px;
   background-color:#708c3a;
   color: #fff;
@@ -98,12 +98,12 @@ header #navPrincipal .navbar-nav > li > a{
   padding:6px;
 
 }
-#links ul.menu li.tituloLinkAreas a{
+#links ul.menu li.tituloMenu a{
   color: #fff;
 }
 
 
-#links ul.menu li.linkAreas{
+#links ul.menu li.linkMenu{
   border-radius:6px;
   margin: 1px;
   background: #ecf5e0;
@@ -112,13 +112,13 @@ header #navPrincipal .navbar-nav > li > a{
   color: #708c3a;
 }
 
-#links ul.menu li.linkAreas a{
+#links ul.menu li.linkMenu a{
   color: #708c3a;
   display: block;
 
 }
 
-#links ul.menu li.linkAreas i{
+#links ul.menu li.linkMenu i{
   padding:10px;
   margin-right: 5px;
   background-color:#708c3a;
@@ -126,9 +126,9 @@ header #navPrincipal .navbar-nav > li > a{
   border-radius:8px 0px 0px 8px;
 }
 
-#links ul.menu li.linkAreas a:hover,
-#links ul.menu li.linkAreas a:active,
-#links ul.menu li.linkAreas a:focus{
+#links ul.menu li.linkMenu a:hover,
+#links ul.menu li.linkMenu a:active,
+#links ul.menu li.linkMenu a:focus{
     color: #000000;
     text-decoration: none;
 }
@@ -201,12 +201,37 @@ footer{
     margin-top: 40px;
 }
 
-footer #linksRodape{
+footer #rodape{
     background: #68a63e;
     padding-bottom: 2.5em;
 }
 
-footer #localRodape{
+footer #rodapeBanner p{
+  margin: 10px;
+  float: left;
+}
+
+footer #rodapeBanner img{
+}
+
+footer #rodape ul.menu{
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+footer #rodape ul.menu li.tituloMenu a{
+  color: #2c4e15;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+footer #rodape ul.menu li.linkMenu a{
+  color: #fff;
+}
+
+
+footer #rodapeLocal{
     background: #102203;
     color: #b6c894;
     min-height: 10em;

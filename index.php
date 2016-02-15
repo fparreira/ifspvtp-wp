@@ -98,7 +98,7 @@
                 </section>
 
                 <!-- banners ---------------------------->
-                <section id="banners" class="col-lg-3" style="background: #127466">
+                <section id="banners" class="col-lg-3">
                     <?php get_sidebar('right'); ?>
                 </section>
 

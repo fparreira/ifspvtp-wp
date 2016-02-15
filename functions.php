@@ -37,5 +37,54 @@ register_sidebar(array(
 'after_title' => '',
 ));
 
+if ( function_exists('register_sidebar') )
+register_sidebar(array(
+'name' => 'bottom1',
+'description' => 'Barra Inferior 1',
+'before_widget' => '',
+'after_widget' => '',
+'before_title' => '',
+'after_title' => '',
+));
+
+if ( function_exists('register_sidebar') )
+register_sidebar(array(
+'name' => 'bottom2',
+'description' => 'Barra Inferior 2',
+'before_widget' => '',
+'after_widget' => '',
+'before_title' => '',
+'after_title' => '',
+));
+
+if ( function_exists('register_sidebar') )
+register_sidebar(array(
+'name' => 'bottom3',
+'description' => 'Barra Inferior 3',
+'before_widget' => '',
+'after_widget' => '',
+'before_title' => '',
+'after_title' => '',
+));
+
+if ( function_exists('register_sidebar') )
+register_sidebar(array(
+'name' => 'bottom4',
+'description' => 'Barra Inferior 4',
+'before_widget' => '',
+'after_widget' => '',
+'before_title' => '',
+'after_title' => '',
+));
+
+if ( function_exists('register_sidebar') )
+register_sidebar(array(
+'name' => 'bottom5',
+'description' => 'Barra Inferior 5',
+'before_widget' => '',
+'after_widget' => '',
+'before_title' => '',
+'after_title' => '',
+));
 
 ?>
