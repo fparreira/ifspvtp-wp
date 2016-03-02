@@ -10,19 +10,6 @@
 
                   <?php get_sidebar('left'); ?>
 
-                    <a href="#" class="btn linkAreas">
-                        <i class="fa fa-cog"></i><span>CERTIFICAÇÃO</span>
-                    </a>
-                    <a href="#" class="btn linkAreas">
-                        <i class="fa fa-bank"></i><span>BIBLIOTECA</span>
-                    </a>
-                    <a href="#" class="btn linkAreas">
-                        <i class="fa fa-arrow-down"></i><span>MANUAL</span>
-                    </a>
-                    <a href="#" class="btn linkAreas">
-                        <i class="fa fa-black-tie"></i><span>CONSELHO</span>
-                    </a>
-
                 </section>
 
                 <!-- conteudo ---------------------------->

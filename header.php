@@ -21,26 +21,26 @@
                 <div class="col-lg-3 brandNavBrasil">
                     <ul class="list-inline">
                         <li>
-                            <a href="#"><img src="<?php bloginfo("template_url"); ?>/assets/images/brasil-band.png" class="img-responsive imagemLeft">BRASIL</a>
+                            <a href="http://brasil.gov.br/"><img src="<?php bloginfo("template_url"); ?>/assets/images/brasil-band.png" class="img-responsive imagemLeft">BRASIL</a>
                         </li>
                         <li>
-                            <a href="#">Acesso à informação</a>
+                            <a href="http://brasil.gov.br/barra#acesso-informacao">Acesso à informação</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-9 itensNavBrasil">
                     <ul class="list-inline">
                         <li>
-                            <a href="#">Participe</a>
+                            <a href="http://brasil.gov.br/barra#participe">Participe</a>
                         </li>
                         <li>
-                            <a href="#">Serviços</a>
+                            <a href="http://www.servicos.gov.br/?pk_campaign=barrabrasil">Serviços</a>
                         </li>
                         <li>
-                            <a href="#">Legislação</a>
+                            <a href="http://www.planalto.gov.br/legislacao">Legislação</a>
                         </li>
                         <li>
-                            <a href="#">Canais</a>
+                            <a href="http://brasil.gov.br/barra#orgaos-atuacao-canais">Canais</a>
                         </li>
                     </ul>
                 </div>
@@ -51,7 +51,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
+                  <a href="http://vtp.ifsp.edu.br">
                     <img src="<?php bloginfo("template_url"); ?>/assets/images/logo-ifsp-vtp.png" class="img-responsive imagemLeft" alt="IFSP - Campus Votuporanga">
+                  </a>
                 </div>
                 <div class="col-lg-5">
                     <img src="<?php bloginfo("template_url"); ?>/assets/images/facebook.png" class="img-responsive imagemLeft" alt="Facebook">
